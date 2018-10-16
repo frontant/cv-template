@@ -1,0 +1,10 @@
+.contact{
+    font-weight: 600;
+
+    &__title{
+        margin-top: 15px;
+        margin-bottom: 3px;
+        color: rgba($greyLight, .8);
+        font-weight: 500;
+    }
+}

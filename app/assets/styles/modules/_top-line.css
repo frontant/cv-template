@@ -1,0 +1,11 @@
+.top-line{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 35px;
+    z-index: 2;
+
+    &--blue{
+        background-color: $blueLight;
+    }
+}

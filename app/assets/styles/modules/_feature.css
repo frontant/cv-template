@@ -1,0 +1,35 @@
+.feature{
+    margin-top: 50px;
+
+    &--on-bottom{
+        position: absolute;
+        top: calc(100% - 235px);
+        width: calc(100% - 80px);
+    }
+
+    &__title{
+        font-family: "Josefin Sans";
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-width: 1px;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+
+        &--light-b-border{
+            border-bottom: 1px solid rgba($greyLight, .3);
+        }
+    
+        &--dark-b-border{
+            border-bottom: 1px solid rgba($greyDark, .3);
+        }
+    }
+
+    &__content{
+        &--l-r-margin{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}

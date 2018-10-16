@@ -1,0 +1,64 @@
+.timeline{
+    font-size: 12px;
+
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    li{
+        list-style: none;
+    }
+
+    &__date{
+        font-weight: 700;
+        line-height: 1.3em;
+        width: 30%;
+    }
+
+    &__event{
+        width: 70%;
+        border-left: 1px solid $greyVeryDark;
+        padding-left: 25px;
+        padding-bottom: 20px;
+
+        &--last-item{
+            padding-bottom: 0;
+
+            /* white overlay that hides a small part of the bottom border */
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: -5px;
+                height: 16px;
+                width: 10px;
+                background-color: #fff;
+            }
+        }
+
+        &__circle-icon{
+            position: absolute;
+            top: -2px;
+            left: -7px;
+        }
+
+        &__title{
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $blueLight;
+            margin: -5px 0 4px 0;
+            letter-spacing: .02rem;
+        }
+
+        &__subtitle{
+            margin: 0;
+            margin: 0 0 10px 0;
+        }
+
+        &__highlight{
+            font-weight: 600;
+            font-style: italic;
+        }
+    }
+}

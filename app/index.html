@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>Lebenslauf</title>
+</head>
+<body class="print-version-">
+    <div class="top-line top-line--blue"></div>
+    <div class="container-fluid page-content">
+        <div class="row">
+            <div class="page-content__left page-content__left--dark col-xs-5">
+                <div class="photo">
+                    <div class="photo__image"></div>
+                </div>
+                <div class="feature">
+                    <h3 class="feature__title feature__title--light-b-border">{{contact.title}}</h3>
+                    <div class="feature__content feature__content--l-r-margin">
+                        <div class="contact">
+                            <h4 class="contact__title">{{contact.item1.caption}}:</h4>
+                            {{contact.item1.data}}
+                        </div>
+                        <div class="contact">
+                            <h4 class="contact__title">{{contact.item2.caption}}:</h4>
+                            {{contact.item2.data}}
+                        </div>
+                        <div class="contact">
+                            <h4 class="contact__title">{{contact.item3.caption}}:</h4>
+                            <div>
+                                {{contact.item3.data}}
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <h4 class="contact__title">{{contact.item4.caption}}:</h4>
+                            <div>
+                                {{contact.item4.data.street}}<br>
+                                {{contact.item4.data.postcode}} {{contact.item4.data.city}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <h3 class="feature__title feature__title--light-b-border">{{skills.title}}</h3>
+                    <div class="feature__content feature__content--l-r-margin">
+                        <div class="skills">
+                            <ul>
+                                <li>
+                                    <h4 class="skills__item-title">{{skills.item1.subject}}</h4>
+                                    <div class="skills__item-bar {{skills.item1.mark}}"></div>
+                                </li>
+                                <li>
+                                    <h4 class="skills__item-title">{{skills.item2.subject}}</h4>
+                                    <div class="skills__item-bar {{skills.item2.mark}}"></div>
+                                </li>
+                                <li>
+                                    <h4 class="skills__item-title">{{skills.item3.subject}}</h4>
+                                    <div class="skills__item-bar {{skills.item3.mark}}"></div>
+                                </li>
+                                <li>
+                                    <h4 class="skills__item-title">{{skills.item4.subject}}</h4>
+                                    <div class="skills__item-bar {{skills.item4.mark}}"></div>
+                                </li>
+                                <li>
+                                    <h4 class="skills__item-title">{{skills.item5.subject}}</h4>
+                                    <div class="skills__item-bar {{skills.item5.mark}}"></div>
+                                </li>
+                                <li>
+                                    <h4 class="skills__item-title">{{skills.item6.subject}}</h4>
+                                    <div class="skills__item-bar {{skills.item6.mark}}"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature feature--on-bottom">
+                   <h3 class="feature__title feature__title--light-b-border">{{lang.title}}</h3>
+                   <div class="feature__content feature__content--l-r-margin">
+                    <p class="language">
+                        <span class="language__label">{{lang.data.lang1.caption}}:</span>
+                        <span class="language__level">{{lang.data.lang1.level}}</span>
+                    </p>
+                    <p class="language">
+                        <span class="language__label">{{lang.data.lang2.caption}}:</span>
+                        <span class="language__level">{{lang.data.lang2.level}}</span>
+                    </p>
+                    <p class="language">
+                        <span class="language__label">{{lang.data.lang3.caption}}:</span>
+                        <span class="language__level">{{lang.data.lang3.level}}</span>
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div class="page-content__right page-content__right--light col-xs-7">
+                <div class="about-me">
+                    <h1 class="about-me__title">{{aboutMe.firstName}} {{aboutMe.lastName}}</h1>
+                    <h2 class="about-me__subtitle">{{aboutMe.position}}</h2>
+                    <p class="about-me__content generic-content-container">
+                        {{aboutMe.summary}}
+                    </p>
+                </div>
+                <div class="feature">
+                    <h3 class="feature__title feature__title--dark-b-border">{{experience.title}}</h3>
+                    <div class="feature__content timeline">
+                        <ul>
+                            <li class="row timeline">
+                                <div class="timeline__date col-xs-4">
+                                    {{experience.item1.period.start}} - {{experience.item1.period.end}}<br>
+                                    {{experience.item1.location}}
+                                </div>
+                                <div class="timeline__event col-xs-8">
+                                    <span class="timeline__event__circle-icon icon icon--circle"></span>
+                                    <h3 class="timeline__event__title">{{experience.item1.position}}</h3>
+                                    <h4 class="timeline__event__subtitle">{{experience.item1.firm}}</h4>
+                                    <div class="generic-content-container">{{experience.item1.summary}}</div>
+                                </div>
+                            </li>
+                            <li class="row timeline">
+                                <div class="timeline__date col-xs-4">
+                                    {{experience.item2.period.start}} - {{experience.item2.period.end}}<br>
+                                    {{experience.item2.location}}
+                                </div>
+                                <div class="timeline__event col-xs-8">
+                                    <span class="timeline__event__circle-icon icon icon--circle"></span>
+                                    <h3 class="timeline__event__title">{{experience.item2.position}}</h3>
+                                    <h4 class="timeline__event__subtitle">{{experience.item2.firm}}</h4>
+                                    <div class="generic-content-container">{{experience.item2.summary}}</div>
+                                </div>
+                            </li>
+                            <li class="row timeline">
+                                <div class="timeline__date col-xs-4">
+                                    {{experience.item3.period.start}} - {{experience.item3.period.end}}<br>
+                                    {{experience.item3.location}}
+                                </div>
+                                <div class="timeline__event timeline__event--last-item col-xs-8">
+                                    <span class="timeline__event__circle-icon icon icon--circle"></span>
+                                    <h3 class="timeline__event__title">{{experience.item3.position}}</h3>
+                                    <h4 class="timeline__event__subtitle">{{experience.item3.firm}}</h4>
+                                    <div class="generic-content-container">{{experience.item3.summary}}</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature">
+                    <h3 class="feature__title feature__title--dark-b-border">{{education.title}}</h3>
+                    <div class="feature__content timeline">
+                        <ul>
+                            <li class="row timeline">
+                                <div class="timeline__date col-xs-4">
+                                    {{education.item1.period.start}} - {{education.item1.period.end}}<br>
+                                    {{education.item1.location}}
+                                </div>
+                                <div class="timeline__event col-xs-8">
+                                    <span class="timeline__event__circle-icon icon icon--circle"></span>
+                                    <h3 class="timeline__event__title">{{education.item1.degree}}</h3>
+                                    <h4 class="timeline__event__subtitle">{{education.item1.school}}</h4>
+                                    <div class="generic-content-container">{{education.item1.summary}}</div>
+                                </div>
+                            </li>
+                            <li class="row timeline">
+                                <div class="timeline__date col-xs-4">
+                                    {{education.item2.period.start}} - {{education.item2.period.end}}<br>
+                                    {{education.item2.location}}
+                                </div>
+                                <div class="timeline__event timeline__event--last-item col-xs-8">
+                                    <span class="timeline__event__circle-icon icon icon--circle"></span>
+                                    <h3 class="timeline__event__title">{{education.item2.degree}}</h3>
+                                    <h4 class="timeline__event__subtitle">{{education.item2.school}}</h4>
+                                    <div class="generic-content-container">{{education.item2.summary}}</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature feature--on-bottom">
+                    <h3 class="feature__title feature__title--dark-b-border">{{interests.title}}</h3>
+                    <div class="feature__content interests">
+                        <ul class="row">
+                            <li class="col-xs-3">
+                                <div class="interests__icon icon {{interests.item1.icon}}"></div>
+                                <span class="interests__title">{{interests.item1.caption}}</span>
+                            </li>
+                            <li class="col-xs-3">
+                                <div class="interests__icon icon {{interests.item2.icon}}"></div>
+                                <span class="interests__title">{{interests.item2.caption}}</span>
+                            </li>
+                            <li class="col-xs-3">
+                                <div class="interests__icon icon {{interests.item3.icon}}"></div>
+                                <span class="interests__title">{{interests.item3.caption}}</span>
+                            </li>
+                            <li class="col-xs-3">
+                                <div class="interests__icon icon {{interests.item4.icon}}"></div>
+                                <span class="interests__title">{{interests.item4.caption}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

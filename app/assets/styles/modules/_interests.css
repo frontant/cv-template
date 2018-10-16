@@ -1,0 +1,21 @@
+.interests{
+    ul{
+        padding: 0;
+    }
+
+    li{
+        list-style: none;
+        text-align: center;
+    }
+
+    &__title{
+        display: block;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    &__icon{
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+}

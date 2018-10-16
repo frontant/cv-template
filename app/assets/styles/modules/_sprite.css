@@ -1,0 +1,34 @@
+/* Do not edit modules/_sprite.css directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite.css */
+
+    .icon{
+        background-image: url('../images/sprites/sprite-b7591ae7.svg');
+    }
+    .no-svg .icon{
+        background-image: url('../images/sprites/sprite-b7591ae7.png');
+    }
+    .icon--circle {
+        width: 13px;
+        height: 13px;
+        background-position: 100% 0;
+    }
+    .icon--compass {
+        width: 42px;
+        height: 42px;
+        background-position: 0 0;
+    }
+    .icon--game-controller {
+        width: 42px;
+        height: 42px;
+        background-position: 76.36363636363636% 0;
+    }
+    .icon--saddle {
+        width: 42px;
+        height: 42px;
+        background-position: 0 100%;
+    }
+    .icon--terminal {
+        width: 42px;
+        height: 42px;
+        background-position: 76.36363636363636% 100%;
+    }

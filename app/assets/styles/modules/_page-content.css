@@ -1,0 +1,25 @@
+.page-content{
+    &__left{
+        height: $maxHeight;
+        width: 40%;
+        padding: 75px 40px 40px 40px;
+        overflow: hidden;
+        color: $greyLight;
+
+        &--dark{
+            background-color: $greyDark;
+        }
+    }
+
+    &__right{
+        height: $maxHeight;
+        width: 60%;
+        padding: 75px 40px 40px 40px;
+        overflow: hidden;
+        color: $greyVeryDark;
+
+        &--light{
+            background-color: #fff;
+        }
+    }
+}
