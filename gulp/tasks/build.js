@@ -73,11 +73,6 @@ gulp.task("build.copyImages", function(){
     .pipe(gulp.dest("./app/build/assets/images"));
 });
 
-gulp.task("build.copyImages", function(){
-    return gulp.src("./app/assets/images/**")
-    .pipe(gulp.dest("./app/build/assets/images"));
-});
-
 gulp.task("build.copySpritesGraphics", function(){
     return gulp.src("./app/temp/sprite/css/**/*.{svg,png}")
     .pipe(gulp.dest("./app/build/assets/images/sprites"));
