@@ -5,7 +5,7 @@ var date = dateformat(new Date(), 'dd.mm.yyyy');
 module.exports = {
     header: {
         github:{
-            caption: 'CV-Template',
+            caption: `github.com/frontant/cv-template`,
             link: 'https://github.com/frontant/cv-template'
         },
         date: 'City, ' + date
