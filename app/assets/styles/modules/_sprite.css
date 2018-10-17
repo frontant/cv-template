@@ -2,15 +2,15 @@
 Instead edit gulp/templates/sprite.css */
 
     .icon{
-        background-image: url('../images/sprites/sprite-b7591ae7.svg');
+        background-image: url('../images/sprites/sprite-3c3fa011.svg');
     }
     .no-svg .icon{
-        background-image: url('../images/sprites/sprite-b7591ae7.png');
+        background-image: url('../images/sprites/sprite-3c3fa011.png');
     }
     .icon--circle {
         width: 13px;
         height: 13px;
-        background-position: 100% 0;
+        background-position: 94.38202247191012% 25.35211267605634%;
     }
     .icon--compass {
         width: 42px;
@@ -20,7 +20,12 @@ Instead edit gulp/templates/sprite.css */
     .icon--game-controller {
         width: 42px;
         height: 42px;
-        background-position: 76.36363636363636% 0;
+        background-position: 70% 0;
+    }
+    .icon--github-logo {
+        width: 18px;
+        height: 18px;
+        background-position: 100% 0;
     }
     .icon--saddle {
         width: 42px;
@@ -30,5 +35,5 @@ Instead edit gulp/templates/sprite.css */
     .icon--terminal {
         width: 42px;
         height: 42px;
-        background-position: 76.36363636363636% 100%;
+        background-position: 70% 100%;
     }

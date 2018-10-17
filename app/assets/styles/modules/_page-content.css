@@ -1,7 +1,7 @@
 .page-content{
     &__left{
         height: $maxHeight;
-        width: 40%;
+        width: 35%;
         padding: 75px 40px 40px 40px;
         overflow: hidden;
         color: $greyLight;
@@ -13,10 +13,14 @@
 
     &__right{
         height: $maxHeight;
-        width: 60%;
+        width: 65%;
         padding: 75px 40px 40px 40px;
         overflow: hidden;
         color: $greyVeryDark;
+
+        a{
+            color: $greyVeryDark;
+        }
 
         &--light{
             background-color: #fff;

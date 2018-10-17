@@ -2,14 +2,14 @@
     margin: 5px 0;
 
     &__label{
-        font-weight: bold;
+        font-weight: 600;
         text-transform: uppercase;
     }
 
     &__level{
         margin-left: 3px;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 500;
         color: rgba($greyLight, .8);
     }
 }

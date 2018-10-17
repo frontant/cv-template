@@ -2,6 +2,9 @@
     .page-content{
         &__left{
             color: $greyVeryDark;
+            a{
+                color: $greyVeryDark;
+            }
 
             &--dark{
                 background-color: rgba($greyLight, .3);
@@ -26,8 +29,11 @@
     }
 
     .contact{
+        font-weight: 500;
+
         &__title{
             color: rgba($greyVeryDark, .8);
+            font-weight: 400;
         }
     }
 
@@ -43,8 +49,13 @@
     }
 
     .language{
+        &__label{
+            font-weight: 600;
+        }
+
         &__level{
             color: rgba($greyVeryDark, .8);
+            font-weight: 400;
         }
     }
 }

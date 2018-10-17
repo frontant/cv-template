@@ -7,37 +7,41 @@
     <link rel="stylesheet" href="assets/styles/styles.css">
     <title>Lebenslauf</title>
 </head>
-<body class="print-version-">
-    <div class="top-line top-line--blue"></div>
+<body>
+    <div class="header">
+        <div class="header__blue-line"></div>
+        <div class="header__github">
+            <a href="{{header.github.link}}" target="_blank">
+                <span class="header__github__logo icon icon--github-logo"></span>
+                {{header.github.caption}}
+            </a>
+        </div>
+        <div class="header__date">{{header.date}}</div>
+    </div>
     <div class="container-fluid page-content">
         <div class="row">
             <div class="page-content__left page-content__left--dark col-xs-5">
                 <div class="photo">
                     <div class="photo__image"></div>
                 </div>
-                <div class="feature">
+                <div class="feature feature--t-margin">
                     <h3 class="feature__title feature__title--light-b-border">{{contact.title}}</h3>
                     <div class="feature__content feature__content--l-r-margin">
                         <div class="contact">
                             <h4 class="contact__title">{{contact.item1.caption}}:</h4>
-                            {{contact.item1.data}}
+                            <div class="contact__data">{{contact.item1.data}}</div>
                         </div>
                         <div class="contact">
                             <h4 class="contact__title">{{contact.item2.caption}}:</h4>
-                            {{contact.item2.data}}
+                            <div class="contact__data">{{contact.item2.data}}</div>
                         </div>
                         <div class="contact">
                             <h4 class="contact__title">{{contact.item3.caption}}:</h4>
-                            <div>
-                                {{contact.item3.data}}
-                            </div>
+                            <div class="contact__data">{{contact.item3.data}}</div>
                         </div>
                         <div class="contact">
                             <h4 class="contact__title">{{contact.item4.caption}}:</h4>
-                            <div>
-                                {{contact.item4.data.street}}<br>
-                                {{contact.item4.data.postcode}} {{contact.item4.data.city}}
-                            </div>
+                            <div class="contact__data">{{contact.item4.data}}</div>
                         </div>
                     </div>
                 </div>
@@ -100,7 +104,7 @@
                         {{aboutMe.summary}}
                     </p>
                 </div>
-                <div class="feature">
+                <div class="feature feature--t-margin">
                     <h3 class="feature__title feature__title--dark-b-border">{{experience.title}}</h3>
                     <div class="feature__content timeline">
                         <ul>

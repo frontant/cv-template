@@ -1,9 +1,13 @@
 .feature{
     margin-top: 50px;
 
+    &--t-margin{
+        margin-top: 60px;
+    }
+
     &--on-bottom{
         position: absolute;
-        top: calc(100% - 235px);
+        top: calc(100% - 250px);
         width: calc(100% - 80px);
     }
 

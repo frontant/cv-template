@@ -18,23 +18,18 @@ var pdfGenConfig = {
     websiteRootDir : "file://" + path.resolve(__dirname, "../.././app/build") + "/"
 }
 
-function createPdfDefault(){
-    return gulp.src("./app/build/*.html")
-    .pipe(htmlPdf({
-        base: pdfGenConfig.websiteRootDir,
-        width: pdfGenConfig.width,
-        height: pdfGenConfig.height
-    }))
-    .pipe(rename("resume.pdf"))
-    .pipe(gulp.dest("./app/build"));
-}
+function createPdf(isPrintVersion){
+    var fileName = isPrintVersion ? "resume-light.pdf" : "resume.pdf";
 
-function createPdfLight(){
     return gulp.src("./app/build/*.html")
     .pipe(through.obj(function(file, enc, cb){
         var $ = cheerio.load(file.contents.toString());
 
-        $("body").addClass("print-version");
+        if(isPrintVersion){
+            $("body").addClass("print-version");
+        }else{
+            $("body").removeClass("print-version");
+        }
 
         var newFile = file.clone({contents: false});
         newFile.contents = Buffer.from($.html(), "utf-8");
@@ -46,7 +41,7 @@ function createPdfLight(){
         width: pdfGenConfig.width,
         height: pdfGenConfig.height
     }))
-    .pipe(rename("resume-light.pdf"))
+    .pipe(rename(fileName))
     .pipe(gulp.dest("./app/build"));
 }
 
@@ -79,7 +74,7 @@ gulp.task("build.copySpritesGraphics", function(){
 });
 
 gulp.task("build.createPdf", ["build.copyHtml", "build.copyImages"], function(){
-    stream = new MergeStream(createPdfDefault(), createPdfLight());
+    stream = new MergeStream(createPdf(false), createPdf(true));
 
     return stream;
 });

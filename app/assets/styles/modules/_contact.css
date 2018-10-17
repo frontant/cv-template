@@ -2,9 +2,13 @@
     font-weight: 600;
 
     &__title{
-        margin-top: 15px;
+        margin-top: 20px;
         margin-bottom: 3px;
         color: rgba($greyLight, .8);
         font-weight: 500;
+    }
+
+    &__data{
+        line-height: 18px;
     }
 }
