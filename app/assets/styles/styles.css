@@ -4,7 +4,7 @@
 @import "./base/_global.css";
 @import "./modules/_generic-content-container.css";
 @import "./modules/_header.css";
-@import "./modules/_page-content.css";
+@import "./modules/_page.css";
 @import "./modules/_photo.css";
 @import "./modules/_feature.css";
 @import "./modules/_contact.css";

@@ -3,23 +3,15 @@ html{
 }
 
 body{
-    width: $maxWidth;
-    height: $maxHeight;
+    border: $pageBorder solid #fff;
+    width: $pageWidth;
+    height: $pageHeight;
     margin: 0 auto;
     background-color: rgb(200, 200, 200);
     font-family: "raleway";
     font-weight: 400;
     font-size: 14px;
-
-    /* removes the vertical line artifact between left and right page columns in pdf */
-    &::before{
-        content: '';
-        position: absolute;
-        display: block;
-        width: calc($maxWidth - 4px);
-        height: $maxHeight;
-        background-color: #fff;
-    }
+    box-sizing: content-box;
 }
 
 a{

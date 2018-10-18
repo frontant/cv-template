@@ -1,5 +1,5 @@
 .print-version{
-    .page-content{
+    .page{
         &__left{
             color: $greyVeryDark;
             a{

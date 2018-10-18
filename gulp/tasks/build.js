@@ -19,7 +19,7 @@ var pdfGenConfig = {
 }
 
 function createPdf(isPrintVersion){
-    var fileName = isPrintVersion ? "resume-light.pdf" : "resume.pdf";
+    var fileName = isPrintVersion ? "resume-light.pdf" : "resume-dark.pdf";
 
     return gulp.src("./app/build/*.html")
     .pipe(through.obj(function(file, enc, cb){

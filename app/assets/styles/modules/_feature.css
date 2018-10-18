@@ -7,7 +7,7 @@
 
     &--on-bottom{
         position: absolute;
-        top: calc(100% - 250px);
+        top: calc(100% - 220px);
         width: calc(100% - 80px);
     }
 

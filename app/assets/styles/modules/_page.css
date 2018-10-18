@@ -1,6 +1,8 @@
-.page-content{
+.page{
+    background-color: #fff;
+    
     &__left{
-        height: $maxHeight;
+        height: $pageHeight;
         width: 35%;
         padding: 75px 40px 40px 40px;
         overflow: hidden;
@@ -12,7 +14,7 @@
     }
 
     &__right{
-        height: $maxHeight;
+        height: $pageHeight;
         width: 65%;
         padding: 75px 40px 40px 40px;
         overflow: hidden;
@@ -20,10 +22,6 @@
 
         a{
             color: $greyVeryDark;
-        }
-
-        &--light{
-            background-color: #fff;
         }
     }
 }
