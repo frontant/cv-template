@@ -1,5 +1,6 @@
 html{
     zoom: 0.666666667; /* not a standard CSS property */
+    background-color: rgb(200, 200, 200);
 }
 
 body{
@@ -7,7 +8,7 @@ body{
     width: $pageWidth;
     height: $pageHeight;
     margin: 0 auto;
-    background-color: rgb(200, 200, 200);
+    background-color: #fff;
     font-family: "raleway";
     font-weight: 400;
     font-size: 14px;
