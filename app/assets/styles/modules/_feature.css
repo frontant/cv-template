@@ -1,25 +1,25 @@
 .feature{
-    margin-top: 50px;
+    margin-top: 2.0833rem;
 
     &--t-margin{
-        margin-top: 60px;
+        margin-top: 2.5rem;
     }
 
     &--on-bottom{
         position: absolute;
-        top: calc(100% - 220px);
-        width: calc(100% - 80px);
+        top: calc(100% - 9.16667rem);
+        width: calc(100% - 3.3333rem);
     }
 
     &__title{
         font-family: "Josefin Sans";
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 0.6666667rem;
+        font-weight: 500;
         text-transform: uppercase;
         border-width: 1px;
-        padding-left: 20px;
-        padding-bottom: 10px;
-        margin-bottom: 30px;
+        padding-left: 0.8333rem;
+        padding-bottom: 0.41667rem;
+        margin-bottom: 1.25rem;
 
         &--light-b-border{
             border-bottom: 1px solid rgba($greyLight, .3);
@@ -32,8 +32,8 @@
 
     &__content{
         &--l-r-margin{
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: 0.41667rem;
+            margin-right: 0.41667rem;
         }
     }
 }

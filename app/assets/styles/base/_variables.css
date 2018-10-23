@@ -1,7 +1,13 @@
-$pageBorder: 20px;
-$pageWidth: calc(892.5px - $pageBorder * 2);
-$pageHeight: calc(1262.25px - $pageBorder * 2);
+/* page options */
+$pageZoom: 1;                  /* scales page */
+$pageZoomOnWindows: 1.333;     /* scales page on Windows */
+$pageBorder: 0px;              /* sets the border size of the page */
 
+/* page dimension */
+$pageWidth: calc(37.165417rem - $pageBorder * 2);
+$pageHeight: calc(52.59375rem - $pageBorder * 2);
+
+/* colors */
 $greyLight: #D9D9D9;
 $greyDark: #6C6C6C;
 $greyVeryDark: #5C5C5C;

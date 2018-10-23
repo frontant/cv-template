@@ -8,14 +8,12 @@ MergeStream = require("merge-stream"),
 through = require("through2"),
 cheerio = require("cheerio"),
 tokenReplace = require("gulp-token-replace"),
-process = require("process"),
 fs = require("fs");
 
-
 var pdfGenConfig = {
-    width : "21cm",
-    height : "29.7cm",
-    websiteRootDir : "file://" + path.resolve(__dirname, "../.././app/build") + "/"
+    format : "A4",
+    orientation : "portrait",
+    websiteRootDir : "file:///" + path.resolve(__dirname, "../.././app/build") + "/"
 }
 
 function createPdf(isPrintVersion){
@@ -25,10 +23,16 @@ function createPdf(isPrintVersion){
     .pipe(through.obj(function(file, enc, cb){
         var $ = cheerio.load(file.contents.toString());
 
+        $("html").css("background-color", "#fff");
+
         if(isPrintVersion){
-            $("body").addClass("print-version");
+            $("html").addClass("print-version");
         }else{
-            $("body").removeClass("print-version");
+            $("html").removeClass("print-version");
+        }
+
+        if(process.platform == "win32"){
+            $("html").addClass("os-windows");
         }
 
         var newFile = file.clone({contents: false});
@@ -45,12 +49,10 @@ function createPdf(isPrintVersion){
     .pipe(gulp.dest("./app/build"));
 }
 
-
-gulp.task("build-all", gulpSequence("sprite", "build"));
-
 gulp.task("build", gulpSequence(
     "build.cleanup",
-    ["styles"],
+    "iconCssGen",
+    "styles",
     ["build.copyHtml", "build.copyImages"],
     "build.createPdf"));
 
@@ -66,11 +68,6 @@ gulp.task("build.copyHtml", function(){
 gulp.task("build.copyImages", function(){
     return gulp.src("./app/assets/images/**")
     .pipe(gulp.dest("./app/build/assets/images"));
-});
-
-gulp.task("build.copySpritesGraphics", function(){
-    return gulp.src("./app/temp/sprite/css/**/*.{svg,png}")
-    .pipe(gulp.dest("./app/build/assets/images/sprites"));
 });
 
 gulp.task("build.createPdf", ["build.copyHtml", "build.copyImages"], function(){

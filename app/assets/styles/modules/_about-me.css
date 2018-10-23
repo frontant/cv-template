@@ -1,20 +1,20 @@
 .about-me{
-    height: 213px;
+    height: 8.875rem;
 
     &__title{
-        font-size: 34px;
+        font-size: 1.41667rem;
         font-weight: 800;
         text-transform: uppercase;
-        margin: 0 0 4px 0;
-        padding-top: 35px;
+        margin: 0 0 0.16667rem 0;
+        padding-top: 1.45833rem;
     }
 
     &__subtitle{
-        font-size: 20px;
+        font-size: 0.83333rem;
         font-weight: 700;
         text-transform: uppercase;
         color: $blueLight;
-        margin: 0 0 20px 0;
+        margin: 0 0 0.83333rem 0;
         word-spacing: .06rem;
     }
 

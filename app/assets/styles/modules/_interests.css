@@ -1,9 +1,13 @@
 .interests{
     ul{
-        padding: 0;
+        padding: 0 0.3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     li{
+        align-self: flex-end;
         list-style: none;
         text-align: center;
     }
@@ -11,11 +15,11 @@
     &__title{
         display: block;
         font-weight: 600;
-        font-size: 12px;
+        font-size: 0.5rem;
     }
 
     &__icon{
         display: inline-block;
-        margin-bottom: 5px;
+        margin-bottom: 0.208333rem;
     }
 }

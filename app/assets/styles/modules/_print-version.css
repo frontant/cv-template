@@ -44,7 +44,7 @@
     .skills{
         &__item-bar{
             background-color: rgba($greyLight, .4);
-            box-shadow: inset 0 2px 2px rgba(#000, 0.2);
+            box-shadow: inset 0 2px 2px rgba(#000, 0.11);
         }
     }
 

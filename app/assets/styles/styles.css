@@ -13,5 +13,6 @@
 @import "./modules/_about-me.css";
 @import "./modules/_timeline.css";
 @import "./modules/_interests.css";
-@import "./modules/_sprite.css";
+@import "./modules/_icon.css";
 @import "./modules/_print-version.css";
+@import "./modules/_os-windows.css";

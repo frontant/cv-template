@@ -1,19 +1,22 @@
 .photo{
-    $width: 211px;
+    $width: 8.7916667rem;
 
     border: 1px solid rgba($greyLight, .5);
-    width: calc($width - 1px);
-    height: calc($width - 1px);
+    width: calc($width - 0.0416667rem);
+    height: calc($width - 0.0416667rem);
     border-radius: 50%;
     margin: 0 auto;
     box-sizing: content-box;
     
     &__image{
         position: absolute;
-        top: 8px;
-        left: 8px;
-        width: calc($width - 16px);
-        height: calc($width - 16px);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: calc($width - 0.6666667rem);
+        height: calc($width - 0.6666667rem);
         border-radius: 50%;
         background: url("../images/profile-photo.jpg") center center/contain no-repeat;
     }

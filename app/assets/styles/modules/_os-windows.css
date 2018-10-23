@@ -1,0 +1,3 @@
+.os-windows{
+    transform: scale($pageZoomOnWindows);
+}

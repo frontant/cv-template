@@ -1,5 +1,5 @@
 .header{
-    $height: 35px;
+    $height: 1.4583rem;
 
     &__blue-line{
         position: absolute;
@@ -15,18 +15,18 @@
         left: 0;
         z-index: 3;
         line-height: $height;
-        padding-left: 20px;
+        padding-left: 0.8333rem;
 
         &__logo{
             display: inline-block;
             vertical-align: middle;
-            margin: 0 3px;
+            margin: 0 0.125rem;
         }
 
         &__caption{
             display: inline-block;
             vertical-align: middle;
-            font-size: 11px;
+            font-size: 0.45833rem;
             font-weight: 600;
             color: #d3ebfa;
         }
@@ -38,7 +38,7 @@
         right: 0;
         top: $height;
         color: $greyVeryDark;
-        font-size: 11px;
-        margin: 20px 40px;
+        font-size: 0.45833rem;
+        margin: 0.8333rem 1.6667rem;
     }
 }

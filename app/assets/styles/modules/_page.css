@@ -2,7 +2,7 @@
     &__left{
         height: $pageHeight;
         width: 35%;
-        padding: 75px 40px 40px 40px;
+        padding: 3.125rem 1.66667rem 1.66667rem 1.66667rem;
         overflow: hidden;
         color: $greyLight;
 
@@ -14,7 +14,7 @@
     &__right{
         height: $pageHeight;
         width: 65%;
-        padding: 75px 40px 40px 40px;
+        padding: 3.125rem 1.66667rem 1.66667rem 1.66667rem;
         overflow: hidden;
         color: $greyVeryDark;
 

@@ -1,5 +1,5 @@
 .language{
-    margin: 5px 0;
+    margin: 0.20833rem 0;
 
     &__label{
         font-weight: 600;
@@ -7,7 +7,7 @@
     }
 
     &__level{
-        margin-left: 3px;
+        margin-left: 0.125rem;
         font-style: italic;
         font-weight: 500;
         color: rgba($greyLight, .8);
