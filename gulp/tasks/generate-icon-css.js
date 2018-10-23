@@ -5,7 +5,7 @@ var gulp = require("gulp"),
     path = require("path"),
     fs = require("fs");
 
-gulp.task("iconCssGen", function (done) {
+gulp.task("generateIconCss", function (done) {
     var cssUrlBase = "../images/icons";
     var destFile = "./app/assets/styles/modules/_icon.css"
 

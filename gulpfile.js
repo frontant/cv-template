@@ -1,7 +1,9 @@
 require("./gulp/tasks/styles");
+require("./gulp/tasks/generate-icon-css");
+require("./gulp/tasks/copy");
+require("./gulp/tasks/generate-pdf");
 require("./gulp/tasks/build");
 require("./gulp/tasks/watch");
-require("./gulp/tasks/icon-css");
 
 var gulp = require("gulp");
 

@@ -31,6 +31,6 @@ gulp.task("watch.cssInject", ["styles"], function(){
     .pipe(browserSync.stream());
 });
 
-gulp.task("watch.waitForHtml", ["build.copyHtml"], function(){
+gulp.task("watch.waitForHtml", ["copy.html"], function(){
     browserSync.reload();
 })
