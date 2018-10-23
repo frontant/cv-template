@@ -157,7 +157,7 @@ Run with:
 ... and stop it by pressing **ctrl + c**.
 
 Now copy the local url that you see in the terminal output to the address bar in your browser. In my case it is **http://localhost:3000**. Here is my output:
-```shell
+```
 [12:13:42] Starting 'watch'...
 [12:13:42] Finished 'watch' after 69 ms
 [Browsersync] Access URLs:
