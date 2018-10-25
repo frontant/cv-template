@@ -27,8 +27,8 @@ gulp.task("generateFonts.css", function () {
             "./app/temp/fonts/**/*.{woff2,woff,eot}",
             "./app/assets/fonts/**/*.ttf"
         ])
-        .pipe(font2css("_fonts.css"), "../fonts")
-        .pipe(gulp.dest("./app/assets/styles/modules"));
+        .pipe(font2css("fonts.css"), "../fonts")
+        .pipe(gulp.dest("./app/assets/styles"));
 });
 
 gulp.task("generateFonts", gulpSequence("generateFonts.fonts", "generateFonts.css"));

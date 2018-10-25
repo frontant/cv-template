@@ -19,6 +19,9 @@ function pdfGen(isPrintVersion){
     .pipe(through.obj(function(file, enc, cb){
         var $ = cheerio.load(file.contents.toString());
 
+        // remove fonts.css (due to phantomjs issue)
+        $("html head link[href$='fonts.css']").remove();
+
         // set html background color to white to avoid artifacts
         $("html").css("background-color", "#fff");
 

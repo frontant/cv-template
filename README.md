@@ -50,7 +50,6 @@ The easiest way to install **node** is via the <a href="https://nodejs.org/en/do
 If you use Ubuntu/Debian run:
 ```shell
  curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
- sudo apt-get update
  sudo apt-get install nodejs
 ```
 
@@ -58,7 +57,7 @@ If you use Ubuntu/Debian run:
 
 Download the <a href="https://github.com/frontant/cv-template/archive/master.zip" target="_blank">**cv-template-master**</a>, unpack the zip file and run:
 ```shell
- cd ~/Download/cv-template-master
+ cd ~/Downloads/cv-template-master
  npm install
  sudo npm install gulp-cli -g
 ```
@@ -66,18 +65,18 @@ Download the <a href="https://github.com/frontant/cv-template/archive/master.zip
 ##### Install Fonts
 
 ```shell
- cp -r ~/Download/cv-template-master/app/assets/fonts ~/.fonts
+ cp -r ~/Downloads/cv-template-master/app/assets/fonts ~/.fonts
 ```
 
 
 ## Build
 
 ```shell
- cd ~/Download/cv-template-master
+ cd ~/Downloads/cv-template-master
  gulp
 ```
 
-You can view generated files in the folder **~/Download/cv-template-master/app/build/**
+You can view generated files in the folder **~/Downloads/cv-template-master/app/build/**
 
 
 ## Customize
@@ -89,15 +88,15 @@ You can view generated files in the folder **~/Download/cv-template-master/app/b
 
 ### Edit Content
 
-The content of the **cv-template** is stored in **~/Download/cv-template-master/app/contents/index.html.js**.
+The content of the **cv-template** is stored in **~/Downloads/cv-template-master/app/contents/index.html.js**.
 
 ### Change Photo
 
-To change the profile photo replace **profile-photo.jpg** and **profile-photo-light.jpg** by your own images in the folder **~/Download/cv-template-master/app/assets/images/**.
+To change the profile photo replace **profile-photo.jpg** and **profile-photo-light.jpg** by your own images in the folder **~/Downloads/cv-template-master/app/assets/images/**.
 
 ### Change Icons
 
-You can change or add custom icons in the *"INTERESTS"* section by putting your own graphics (svg, png, jpg) to the folder **~/Download/cv-template-master/app/assets/images/icons/**. Finally you will need to edit the file **~/Download/cv-template-master/app/contents/index.html.js** and change the value of the **icon** attribute by entering **"icon--"** and **"file name"** without extension.
+You can change or add custom icons in the *"INTERESTS"* section by putting your own graphics (svg, png, jpg) to the folder **~/Downloads/cv-template-master/app/assets/images/icons/**. Finally you will need to edit the file **~/Downloads/cv-template-master/app/contents/index.html.js** and change the value of the **icon** attribute by entering **"icon--"** and **"file name"** without extension.
 ```js
     interests: {
         title: 'Interests',
@@ -122,7 +121,7 @@ You can change or add custom icons in the *"INTERESTS"* section by putting your 
 
 ### Page Options
 
-Page Options are placed in the file **~/Download/cv-template-master/app/assets/styles/base/_variables.css**.
+Page Options are placed in the file **~/Downloads/cv-template-master/app/assets/styles/base/_variables.css**.
 ```scss
  /* page options */
  $pageZoom: 1;                  /* scales page */
@@ -142,7 +141,7 @@ By default the page border is set to 0px. If your printer cuts off the page cont
 
 ## Live Preview
 
-The *Live Preview* is very usefull if you want to view template changes in your browser on the fly, without runnig **gulp** every time. This will only work if you make changes to **index.html**, **index.html.js** files and CSS files in **~/Download/cv-template-master/app/assets/styles/** directory. If you make changes to other files you still need to run **gulp**. You can run **gulp** in a separate terminal without stopping the *Live Preview*.
+The *Live Preview* is very usefull if you want to view template changes in your browser on the fly, without runnig **gulp** every time. This will only work if you make changes to **index.html**, **index.html.js** files and CSS files in **~/Downloads/cv-template-master/app/assets/styles/** directory. If you make changes to other files you still need to run **gulp**. You can run **gulp** in a separate terminal without stopping the *Live Preview*.
 
 ### Run Live Preview
 

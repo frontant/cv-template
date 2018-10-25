@@ -9,7 +9,7 @@ calc = require("postcss-calc"),
 autoprefixer = require("autoprefixer");
 
 gulp.task("styles", function(){
-    return gulp.src("./app/assets/styles/styles.css")
+    return gulp.src("./app/assets/styles/*.css")
     .pipe(postcss([
         cssImport,
         mixins,
