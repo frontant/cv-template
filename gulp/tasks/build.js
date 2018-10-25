@@ -4,9 +4,16 @@ del = require("del");
 
 gulp.task("build", gulpSequence(
     "build.cleanup",
-    "generateIconCss",
+    ["generateIconCss", "generateFonts.css"],
     "styles",
-    ["copy.html", "copy.images"],
+    ["copy.html", "copy.images", "copy.fonts"],
+    "generatePdf"));
+
+gulp.task("build-all", gulpSequence(
+    "build.cleanup",
+    ["generateIconCss", "generateFonts"],
+    "styles",
+    ["copy.html", "copy.images", "copy.fonts"],
     "generatePdf"));
 
 gulp.task("build.cleanup", function(){

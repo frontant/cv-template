@@ -9,8 +9,8 @@ cv-template, cv, resume, curriculum-vitae, template, theme, generator, html, pdf
 
 <h5 align="center">Single page cv-template written in html and built with gulp.</h5>
 <p align="center">
-    <a href="https://frontant.github.io/cv-template/demo/" target="_blank">HTML</a> |
-    <a href="https://frontant.github.io/cv-template/demo/resume-dark.pdf" target="_blank">PDF</a>
+    <a href="https://frontant.github.io/cv-template-demo/" target="_blank">HTML</a> |
+    <a href="https://frontant.github.io/cv-template-demo/resume-dark.pdf" target="_blank">PDF</a>
 </p>
 
 The objective of this project was to develope a good-looking single page curriculum vitae template with the automation tool <a href="https://gulpjs.com/" target="_blank">**gulp**</a> that automates painful or time-consuming tasks in a development workflow.

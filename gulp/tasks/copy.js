@@ -17,3 +17,10 @@ gulp.task("copy.images", function(){
     .pipe(gulp.dest("./app/build/assets/images"));
 });
 
+gulp.task("copy.fonts", function () {
+    return gulp.src([
+            "./app/temp/fonts/**/*.{woff2,woff,eot}",
+            "./app/assets/fonts/**/*.ttf"
+        ])
+        .pipe(gulp.dest("./app/build/assets/fonts"));
+});

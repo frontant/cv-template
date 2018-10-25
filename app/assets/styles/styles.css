@@ -1,3 +1,4 @@
+@import "./modules/_fonts";
 @import "normalize.css";
 @import "bootstrap-grid";
 @import "./base/_variables.css";

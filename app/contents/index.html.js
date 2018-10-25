@@ -3,6 +3,9 @@ var dateformat = require("dateformat");
 var date = dateformat(new Date(), 'dd.mm.yyyy');
 
 module.exports = {
+    document: {
+        title: "Bernard Keen"
+    },
     header: {
         github:{
             caption: `github.com/frontant/cv-template`,
