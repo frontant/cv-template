@@ -22,36 +22,26 @@ The objective of this project was to develope a good-looking single page curricu
 ## Installation
 
 This template depends on:
-- **Google Fonts** (<a href="https://fonts.google.com/specimen/Josefin+Sans" target="_blank">**Josefin-Sans**</a> and <a href="https://fonts.google.com/specimen/Raleway" target="_blank">**Raleway**</a>)
 - <a href="https://nodejs.org/" target="_blank">**node 8.x**</a>
 - <a href="https://gulpjs.com/" target="_blank">**gulp**</a>
+- **Google Fonts** (<a href="https://fonts.google.com/specimen/Josefin+Sans" target="_blank">**Josefin-Sans**</a> and <a href="https://fonts.google.com/specimen/Raleway" target="_blank">**Raleway**</a>)
+
+The project uses **phantomjs** to transform HTML to PDF. Unfortunately phantomjs can't handle custom fonts defined with @font-face property. To get phantomjs to render HTML files correctly you will need to install fonts on your system.
+
 
 ### Installation (Windows)
 
-1. Download and unzip fonts <a href="https://fonts.google.com/specimen/Josefin+Sans" target="_blank">**Josefin-Sans**</a> and <a href="https://fonts.google.com/specimen/Raleway" target="_blank">**Raleway**</a>
-2. **Select all** fonts and click on them with the **right mouse button**, select **install**
-3. download and install the LTS version of <a href="https://nodejs.org/" target="_blank">**Node**</a>
-4. Download and unzip the <a href="https://github.com/frontant/cv-template/archive/master.zip" target="_blank">**cv-template-master**</a>
-5. Open the terminal (cmd.exe) and run commands:
+1. Download and install the LTS version of <a href="https://nodejs.org/" target="_blank">**Node**</a>
+2. Download and unzip the <a href="https://github.com/frontant/cv-template/archive/master.zip" target="_blank">**cv-template-master**</a>
+3. Open the terminal (cmd.exe) and run commands:
 ```shell
  cd cv-template-master
  npm install
  npm install gulp-cli -g
 ```
+4. Now setup fonts. Change to the folder **cv-template-master/app/assets/fonts/**. Open the folder **Raleway**. **Select all fonts** in there and click on the selection with the **right mouse button**, than choose **install**. Do the same with **Josefin_Sans**.
 
 ### Installation (Linux)
-
-##### Install Google Fonts
-
-This project uses **phantomjs** to generate pdf files. **Phantomjs** can only use fonts that are installed on the system. So you need to install Google Fonts first:
-
-1. Download fonts <a href="https://fonts.google.com/specimen/Josefin+Sans" target="_blank">**Josefin-Sans**</a> and <a href="https://fonts.google.com/specimen/Raleway" target="_blank">**Raleway**</a>
-2. Copy downloaded fonts to **~/.fonts** folder:
-```shell
- mkdir -p ~/.fonts/Josefin_Sans  ~/.fonts/RaleWay
- unzip ~/Downloads/Josefin_Sans.zip -d ~/.fonts/Josefin_Sans
- unzip ~/Downloads/RaleWay.zip -d ~/.fonts/RaleWay
-```
 
 ##### Install Node
 
@@ -71,6 +61,12 @@ Download the <a href="https://github.com/frontant/cv-template/archive/master.zip
  cd ~/Download/cv-template-master
  npm install
  sudo npm install gulp-cli -g
+```
+
+##### Install Fonts
+
+```shell
+ cp -r ~/Download/cv-template-master/app/assets/fonts ~/.fonts
 ```
 
 
