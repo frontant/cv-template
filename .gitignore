@@ -16,6 +16,7 @@ dist/
 temp/
 
 # OS or Editor folders
+.vscode
 .DS_Store
 Thumbs.db
 .cache
