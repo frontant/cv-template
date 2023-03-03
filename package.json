@@ -12,7 +12,7 @@
     "cheerio": "1.0.0-rc.2",
     "dateformat": "^3.0.3",
     "del": "3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-batch": "^1.0.5",
     "gulp-html-pdf": "^0.3.0",
     "gulp-logger": "",
