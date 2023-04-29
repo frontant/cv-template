@@ -7,7 +7,7 @@
     "bootstrap-grid": "^3.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "8.4.1",
+    "autoprefixer": "10.4.14",
     "browser-sync": "^2.26.13",
     "cheerio": "1.0.0-rc.2",
     "dateformat": "^3.0.3",
@@ -16,7 +16,7 @@
     "gulp-batch": "^1.0.5",
     "gulp-html-pdf": "^0.3.0",
     "gulp-logger": "",
-    "gulp-postcss": "7.0.0",
+    "gulp-postcss": "9.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sequence": "^0.4.6",
     "gulp-token-replace": "^1.1.2",
@@ -27,11 +27,11 @@
     "image-size": "^0.6.3",
     "merge-stream": "^1.0.1",
     "postcss-calc": "^7.0.5",
-    "postcss-hexrgba": "^1.0.1",
-    "postcss-import": "^11.1.0",
+    "postcss-hexrgba": "^2.1.0",
+    "postcss-import": "^15.1.0",
     "postcss-mixins": "^6.2.0",
-    "postcss-nested": "3.0.0",
-    "postcss-simple-vars": "4.1.0",
+    "postcss-nested": "6.0.1",
+    "postcss-simple-vars": "7.0.1",
     "through2": "2.0.3",
     "to-css": "^1.2.1"
   }
